@@ -87,9 +87,9 @@
                         @if (Auth::check())
                         <li><a href="course_reg">Add Courses</a></li>
                         @endif
-                         <li><a href="mycourse">Courses</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+                         <!-- <li><a href="mycourse">Courses</a></li> -->
+                        <!-- <li><a href="#">About</a></li>
+                        <li><a href="">Contact</a></li> -->
                         <!-- <div class="flex-center position-ref full-height"> -->
 
                              @guest
@@ -149,7 +149,7 @@
     <table class="table">
       <thead class="thead">
         <tr>
-          <th>#</th>
+          <!-- <th>#</th> -->
           <th>Course Name</th>
           <th>Course Code</th>
           <th>Batch</th>
@@ -160,7 +160,7 @@
       <tbody>
       	@foreach( $courses as $course)
         <tr>
-          <td><a>{{$course->id}}</a></td>
+          <!-- <td><a>{{$course->id}}</a></td> -->
           <td><a href="{{ route('userteamslist', ['course_name' => $course->course_name]) }}">{{$course->course_name}}</a></td>
           <td><a>{{$course->course_code}}</a></td>
           <td><a>{{$course->batch}}</a></td>

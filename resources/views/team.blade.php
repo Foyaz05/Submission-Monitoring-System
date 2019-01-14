@@ -54,7 +54,7 @@
 
 
 
-
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" rel="stylesheet" />
 
 	<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
@@ -75,25 +75,47 @@
 </head>
 <body>
 
-  <div id="app">
-        <nav class="navbar navbar-expand-md navbar-light navbar-laravel">
-            <div class="container">
-                <li><h2>Submission  Monitoring  System</h2></li>
-                
+<div id="app" class="container">
+  <nav class="navbar navbar-expand-md navbar-light navbar-laravel">
+    <!-- <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button> -->
+    <!-- <a class="navbar-brand" href="#">Submission Monitoring System</a> -->
+    <li><h3>Submission  Monitoring  System</h3></li>
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+      </li>
 
-                <div class="" id="navbarSupportedContent">
-                    <!-- Left Side Of Navbar -->
-                      <ul class="nav navbar-nav navbar-left">
-                        <li><a href="/">Home</a></li>
-                        @if (Auth::check())
-                        <li><a href="course_reg">Add Courses</a></li>
-                        @endif
-                         <li><a href="mycourse">Courses</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                        <!-- <div class="flex-center position-ref full-height"> -->
+      @if (Auth::check())
+      <li class="nav-item">
+        <a class="nav-link" href="/course_reg">Add Courses</a>
+      </li>
+      @endif
 
-                             @guest
+  
+      <li class="nav-item">
+        <a class="nav-link" href="/showcourse">Courses</a>
+      </li>
+      <!-- <li class="nav-item">
+        <a class="nav-link" href="#">About</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="#">Contact</a>
+      </li> -->
+    </ul>
+   <!--  <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="{{ url('/login') }}">Login</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{{ url('/register') }}">Register</a>
+      </li>
+    </ul> -->
+
+                        @guest
+                        <ul class="navbar-nav">
                             <li class="nav-item">
                                 <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
                             </li>
@@ -120,23 +142,11 @@
                                     </form>
                                 </div>
                             </li>
+                            </ul>
                         @endguest
 
-        <!-- </div> -->
-                    </ul>
-                    <!-- Right Side Of Navbar -->
-                    <ul class="navbar-nav ml-auto">
-
-                        <!-- Authentication Links -->
-                       
-                    </ul>
-                </div>
-            </div>
-        </nav>
-
-        
-    </div>
-
+  </nav>
+</div>
 
 	<div class="container">
   <h2>All Teams</h2>   <br>                                                                            
@@ -146,7 +156,7 @@
       <thead class="thead">
         <tr>
 
-          <th>#</th>
+          <!-- <th>#</th> -->
           <th>Team Name</th>
           <th>Member 1</th>
          <th>Member 2</th>
@@ -154,7 +164,7 @@
          <th>Member 4</th>
          <th>Member 5</th>
          <th>Description</th>
-         <th>Action</th>
+         <th>Status</th>
          <th></th>
 
         </tr>
@@ -163,7 +173,7 @@
       	@foreach( $teams as $team)
         <tr>
          
-          <td>{{$team->id}}</td>
+          <!-- <td>{{$team->id}}</td> -->
           <td>{{$team->t_name}}</td>
           <td>{{$team->student1}}</td>
           <td>{{$team->student2}}</td>
@@ -173,7 +183,7 @@
           <td>{{$team->description}}</td>
           <td> <button class="btn btn-primary btn-small" ><a style="text-decoration: none; color: white;" href="{{route('team.activate',[$course_name,$team->id])}}">Start</a></button></td>
 
-          <td> <button class="btn btn-primary btn-small" ><a style="text-decoration: none; color: white;" href="{{route('team.deactivate',[$course_name,$team->id])}}">Finished</a></button></td>
+          <td> <button class="btn btn-primary btn-small" ><a style="text-decoration: none; color: white;" href="{{route('team.deactivate',[$course_name,$team->id])}}">Finish</a></button></td>
 
 
         </tr>

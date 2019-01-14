@@ -5,8 +5,8 @@
 		
 
 		body {
-     background: url('https://static-communitytable.parade.com/wp-content/uploads/2014/03/rethink-target-heart-rate-number-ftr.jpg') fixed;
-    background-size: cover;
+     /*background: #000000;
+    background-size: cover;*/
 }
 
 *[role="form"] {
@@ -60,8 +60,8 @@
                         <li><a href="course_reg">Add Courses</a></li>
                         @endif
                          <li><a href="mycourse">Courses</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+                        <!-- <li><a href="#">About</a></li>
+                        <li><a href="contact.html">Contact</a></li> -->
                         <!-- <div class="flex-center position-ref full-height"> -->
 
                              @guest

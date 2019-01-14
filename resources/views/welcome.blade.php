@@ -59,10 +59,10 @@
                 <nav id="nav">
                     <ul class="main-menu nav navbar-nav navbar-right">
 
-                        <li><a href="index.html">Home</a></li>
+                        <li><a href="/">Home</a></li>
                         <li><a href="/showcourse">Courses</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+                        <!-- <li><a href="#">About</a></li>
+                        <li><a href="contact.html">Contact</a></li> -->
                         <!-- <div class="flex-center position-ref full-height"> -->
             @if (Route::has('login'))
                 <!-- <div class="top-right links"> -->
@@ -98,7 +98,7 @@
                         <div class="col-md-8">
                             <h1 class="white-text">A place to view submission of teams</h1>
                             <p class="lead white-text">Select your course and watch the running teams submitting their project. An efficient way to get idea about the expected time of your submission.</p>
-                            <a class="main-button icon-button" href="#">Get Started!</a>
+                            <!-- <a class="main-button icon-button" href="#">Get Started!</a> -->
                         </div>
                     </div>
                 </div>
@@ -108,86 +108,7 @@
         <!-- /Home -->
 
         <!-- Courses -->
-        <div id="courses" class="section">
-
-            <!-- container -->
-            <div class="container">
-
-                <!-- row -->
-                <div class="row">
-                    <div class="section-header text-center">
-                        <h2>Courses</h2>
-                    </div>
-                </div>
-                <!-- /row -->
-
-                <!-- courses -->
-                <div id="courses-wrapper">
-
-                    <!-- row -->
-                    <div class="row">
-
-                        <!-- single course -->
-                        <div class="col-md-3 col-sm-6 col-xs-6">
-                            <div class="course">
-                                <a href="#" class="course-img">
-                                    <img src="./img/course01.jpg" alt="">
-                                    <i class="course-link-icon fa fa-link"></i>
-                                </a>
-                                <a class="course-title" href="#">Project 150</a>
-                            </div>
-                        </div>
-                        <!-- /single course -->
-
-                        <!-- single course -->
-                        <div class="col-md-3 col-sm-6 col-xs-6">
-                            <div class="course">
-                                <a href="#" class="course-img">
-                                    <img src="./img/course02.jpg" alt="">
-                                    <i class="course-link-icon fa fa-link"></i>
-                                </a>
-                                <a class="course-title" href="#">Project 250</a>
-                            </div>
-                        </div>
-                        <!-- /single course -->
-
-                        <!-- single course -->
-                        <div class="col-md-3 col-sm-6 col-xs-6">
-                            <div class="course">
-                                <a href="#" class="course-img">
-                                    <img src="./img/course03.jpg" alt="">
-                                    <i class="course-link-icon fa fa-link"></i>
-                                </a>
-                                <a class="course-title" href="#">Project 350</a>
-                            </div>
-                        </div>
-                        <!-- /single course -->
-
-                        <div class="col-md-3 col-sm-6 col-xs-6">
-                            <div class="course">
-                                <a href="#" class="course-img">
-                                    <img src="./img/course04.jpg" alt="">
-                                    <i class="course-link-icon fa fa-link"></i>
-                                </a>
-                                <a class="course-title" href="#">Java Project</a>
-                            </div>
-                        </div>
-                        <!-- /single course -->
-
-                    </div>
-                    <!-- /row -->
-
-                </div>
-                <!-- /courses -->
-
-                <div class="row">
-                    <div class="center-btn">
-                        <a class="main-button icon-button" href="#">More Courses</a>
-                    </div>
-                </div>
-
-            </div>
-            <!-- container -->
+        <!-- <!-- <div id="courses" class="section">
 
         </div>
         <!-- /Courses -->
@@ -206,7 +127,7 @@
 
                     <div class="col-md-8 col-md-offset-2 text-center">
                         <h2 class="white-text">Contact Us</h2>
-                        <p class="lead white-text">sust_cse@gmail.com</p>
+                        <p class="lead white-text">Address: Dr. M. A. Wazed Mia IICT building, SUST, Sylhet   <br> Contact No: 01********* <br> Email: sust_cse@gmail.com</p>
                     </div>
 
                 </div>
@@ -269,11 +190,11 @@
                     <!-- /social -->
 
                     <!-- copyright -->
-                    <!-- <div class="col-md-8 col-md-pull-4">
+                    <div class="col-md-8">
                         <div class="footer-copyright">
-                            <span>&copy; Copyright 2018. All Rights Reserved. | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com">Colorlib</a></span>
+                            <span>&copy; All Rights Reserved by SUST-CSE</span>
                         </div>
-                    </div> -->
+                    </div>
                     <!-- /copyright -->
 
                     <!-- /new_copyright -->

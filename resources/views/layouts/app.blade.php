@@ -7,7 +7,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>Submission Monitoring System</title>
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
@@ -72,8 +72,8 @@
                         <li><a href="course_reg">Add Courses</a></li>
                         @endif
                          <li><a href="mycourse">Courses</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+                        <!-- <li><a href="#">About</a></li>
+                        <li><a href="contact.html">Contact</a></li> -->
                         <!-- <div class="flex-center position-ref full-height"> -->
 
                              @guest

@@ -78,7 +78,7 @@
   <div id="app">
         <nav class="navbar navbar-expand-md navbar-light navbar-laravel">
             <div class="container">
-                <li><h2>Submission  Monitoring  System</h2></li>
+                <li><h1>Submission  Monitoring  System</h1></li>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -91,8 +91,8 @@
                         <li><a href="course_reg">Add Courses</a></li>
                         @endif
                          <li><a href="mycourse">Courses</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+                        <!-- <li><a href="#">About</a></li>
+                        <li><a href="">Contact</a></li> -->
                         <!-- <div class="flex-center position-ref full-height"> -->
 
                              @guest

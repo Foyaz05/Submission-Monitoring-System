@@ -61,12 +61,12 @@ public function userteamslist($course_name)
         $this->validate($request, [
 
           't_name' => 'required |max:255',
-          'student1' => 'required |max:255',
-           'student2' => 'required |max:255',
-          'student3' => 'required |max:255',
-          'student4' => 'required |max:255',
-           'student5' => 'required |max:255',
-          'description' => 'required |max:255',
+          // 'student1' => 'required |max:255',
+          //  'student2' => 'required |max:255',
+          // 'student3' => 'required |max:255',
+          // 'student4' => 'required |max:255',
+          //  'student5' => 'required |max:255',
+          // 'description' => 'required |max:255',
           'course_name' => 'required |max:255',
           
 
